@@ -21,11 +21,18 @@ import Layout from '../views/layout/Layout'
     icon: 'svg-name'             the icon show in the sidebar,
   }
 **/
-export const constantRouterMap = [
-    { path: '/login', component: () =>
-            import ('@/views/login/index'), hidden: true },
-    { path: '/404', component: () =>
-            import ('@/views/404'), hidden: true },
+export const constantRouterMap = [{
+        path: '/login',
+        component: () =>
+            import ('@/views/login/index'),
+        hidden: true
+    },
+    {
+        path: '/404',
+        component: () =>
+            import ('@/views/404'),
+        hidden: true
+    },
 
     {
         path: '/',
